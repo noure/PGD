@@ -1,6 +1,6 @@
-package dao;
+package beans;
 
-// Generated Apr 22, 2014 10:12:53 PM by Hibernate Tools 3.4.0.CR1
+// Generated Apr 23, 2014 6:50:01 PM by Hibernate Tools 3.4.0.CR1
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -11,10 +11,6 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class SousRepertoryId implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -7122415144649967906L;
 	private long idRepertory;
 	private long idSousRepertory;
 

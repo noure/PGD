@@ -1,6 +1,6 @@
-package dao;
+package beans;
 
-// Generated Apr 22, 2014 10:12:53 PM by Hibernate Tools 3.4.0.CR1
+// Generated Apr 23, 2014 6:50:01 PM by Hibernate Tools 3.4.0.CR1
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
@@ -19,10 +19,6 @@ import javax.persistence.Table;
 @Table(name = "Adminstrator", catalog = "GED_DB")
 public class Adminstrator implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private AdminstratorId id;
 	private User user;
 	private String loginAdmin;

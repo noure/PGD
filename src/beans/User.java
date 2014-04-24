@@ -1,6 +1,6 @@
-package dao;
+package beans;
 
-// Generated Apr 22, 2014 10:12:53 PM by Hibernate Tools 3.4.0.CR1
+// Generated Apr 23, 2014 6:50:01 PM by Hibernate Tools 3.4.0.CR1
 
 import java.util.Date;
 import java.util.HashSet;
@@ -29,6 +29,10 @@ public class User implements java.io.Serializable {
 	private String nationUser;
 	private String profitionUser;
 	private String pwdUser;
+	/**
+	 * n'oublie pas d'inversé les cardinaliter entre les user et administrator
+	 * 
+	 */
 	private Set adminstrators = new HashSet(0);
 
 	public User() {
@@ -36,6 +40,20 @@ public class User implements java.io.Serializable {
 
 	public User(long userId) {
 		this.userId = userId;
+	}
+
+	public User(long userId, String userName, Long emailUser,
+			Date birthdayUser, String cniUser, String nationUser,
+			String profitionUser, String pwdUser) {
+		this.userId = userId;
+		this.userName = userName;
+		this.emailUser = emailUser;
+		this.birthdayUser = birthdayUser;
+		this.cniUser = cniUser;
+		this.nationUser = nationUser;
+		this.profitionUser = profitionUser;
+		this.pwdUser = pwdUser;
+
 	}
 
 	public User(long userId, String userName, Long emailUser,

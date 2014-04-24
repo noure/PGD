@@ -1,6 +1,6 @@
-package dao;
+package beans;
 
-// Generated Apr 22, 2014 10:12:53 PM by Hibernate Tools 3.4.0.CR1
+// Generated Apr 23, 2014 6:50:01 PM by Hibernate Tools 3.4.0.CR1
 
 import java.util.Date;
 import java.util.HashSet;
@@ -21,10 +21,6 @@ import javax.persistence.TemporalType;
 @Table(name = "Repertory", catalog = "GED_DB")
 public class Repertory implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private long idRepertory;
 	private String nameRepertory;
 	private Date dateCreation;

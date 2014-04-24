@@ -4,5 +4,21 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    
+	<package name="default" extends="hibernate-default">
+		<action name="verify" class="action.DocumentAction" method="verify">
+			<result name="goodlogin">/gestionbulletinofficiel.jsp</result>
+			<result name="badlogin">/index.jsp</result>
+
+		</action>
+		<action name="adduser" class="action.UserAction" method="adduser">
+			<result name="success">/gestionbuttetinofficiel.jsp</result>
+
+		</action>
+
+		<action name="index" class="action.DocumentAction">
+ <result>index.jsp</result>
+		
+		</action>
+
+	</package>
 </struts>
